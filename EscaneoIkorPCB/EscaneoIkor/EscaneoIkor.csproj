@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3ECD41E-7F78-4024-A8B5-6737F83B8152}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EscaneoIkor</RootNamespace>
+    <AssemblyName>EscaneoIkor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://creandoproyectosexitosos.com/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://creandoproyectosexitosos.com/ikormex/scaneoikor/</InstallUrl>
+    <UpdateUrl>http://creandoproyectosexitosos.com/ikormex/scaneoikor/</UpdateUrl>
+    <PublisherName>IKOR</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.htm</WebPage>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D532BAFAB6F7940404CFCAA5C7A185C3972CE85C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>EscaneoIkor_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>printtrafos%282%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MdiTabStrip, Version=1.5.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\MdiTabStrip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.9.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clSeguridad.cs" />
+    <Compile Include="Configuracion\frmConfiguracionCorreo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\frmConfiguracionCorreo.designer.cs">
+      <DependentUpon>frmConfiguracionCorreo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\frmConfiguracionRepositorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\frmConfiguracionRepositorios.designer.cs">
+      <DependentUpon>frmConfiguracionRepositorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\frmMonitores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\frmMonitores.designer.cs">
+      <DependentUpon>frmMonitores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataMatrix\cDataMatrix.cs" />
+    <Compile Include="DataMatrix\frmDataMatrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataMatrix\frmDataMatrix.Designer.cs">
+      <DependentUpon>frmDataMatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Excel\frmProcesarExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excel\frmProcesarExcel.designer.cs">
+      <DependentUpon>frmProcesarExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Excel\cExcel.cs" />
+    <Compile Include="mSeguridad.cs" />
+    <Compile Include="Opcionadores\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opcionadores\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opcionadores\frmMenuOperador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opcionadores\frmMenuOperador.Designer.cs">
+      <DependentUpon>frmMenuOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opcionadores\frmMenuSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opcionadores\frmMenuSistema.designer.cs">
+      <DependentUpon>frmMenuSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opcionadores\frmOpcionConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opcionadores\frmOpcionConfiguracion.designer.cs">
+      <DependentUpon>frmOpcionConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opcionadores\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opcionadores\frmPrincipal.designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opcionadores\ToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opcionadores\ToolWindow.designer.cs">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operador\cOperador.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seguridad\frmActualizaContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\frmActualizaContraseña.designer.cs">
+      <DependentUpon>frmActualizaContraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\frmUsuarios.designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLHelper.cs" />
+    <Compile Include="SqlServer\frmServidorSqlServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SqlServer\frmServidorSqlServer.designer.cs">
+      <DependentUpon>frmServidorSqlServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\frmConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\frmConsulta.designer.cs">
+      <DependentUpon>frmConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\frmTestConnectionSql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\frmTestConnectionSql.designer.cs">
+      <DependentUpon>frmTestConnectionSql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SplashScreenFormV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\SplashScreenFormV2.designer.cs">
+      <DependentUpon>SplashScreenFormV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uctrlTablaConFiltro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uctrlTablaConFiltro.designer.cs">
+      <DependentUpon>uctrlTablaConFiltro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xml\cXml.cs" />
+    <Compile Include="Xml\frmProcesarXml.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xml\frmProcesarXml.designer.cs">
+      <DependentUpon>frmProcesarXml.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Configuracion\frmConfiguracionCorreo.resx">
+      <DependentUpon>frmConfiguracionCorreo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\frmConfiguracionRepositorios.resx">
+      <DependentUpon>frmConfiguracionRepositorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\frmMonitores.resx">
+      <DependentUpon>frmMonitores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataMatrix\frmDataMatrix.resx">
+      <DependentUpon>frmDataMatrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excel\frmProcesarExcel.resx">
+      <DependentUpon>frmProcesarExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcionadores\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcionadores\frmMenuOperador.resx">
+      <DependentUpon>frmMenuOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcionadores\frmMenuSistema.resx">
+      <DependentUpon>frmMenuSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcionadores\frmOpcionConfiguracion.resx">
+      <DependentUpon>frmOpcionConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcionadores\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcionadores\ToolWindow.resx">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Seguridad\frmActualizaContraseña.resx">
+      <DependentUpon>frmActualizaContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SqlServer\frmServidorSqlServer.resx">
+      <DependentUpon>frmServidorSqlServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\frmConsulta.resx">
+      <DependentUpon>frmConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\frmTestConnectionSql.resx">
+      <DependentUpon>frmTestConnectionSql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SplashScreenFormV2.resx">
+      <DependentUpon>SplashScreenFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uctrlTablaConFiltro.resx">
+      <DependentUpon>uctrlTablaConFiltro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xml\frmProcesarXml.resx">
+      <DependentUpon>frmProcesarXml.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="EscaneoIkor_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\MdiTabStrip.dll" />
+    <Content Include="DLL\WeifenLuo.WinFormsUI.Docking.dll" />
+    <Content Include="printtrafos%282%29.ico" />
+    <Content Include="Resources\123.png" />
+    <Content Include="Resources\30y %281%29.PNG" />
+    <Content Include="Resources\30y.PNG" />
+    <Content Include="Resources\accept_database-32.png" />
+    <Content Include="Resources\add_database-32.png" />
+    <Content Include="Resources\approval-32 %281%29.png" />
+    <Content Include="Resources\approval-32.png" />
+    <Content Include="Resources\approval-321.png" />
+    <Content Include="Resources\approval-48 %281%29.png" />
+    <Content Include="Resources\approval-48.png" />
+    <Content Include="Resources\bgbar %281%29.JPG" />
+    <Content Include="Resources\bgbar.JPG" />
+    <Content Include="Resources\bgBlue2.png" />
+    <Content Include="Resources\bgDark2.png" />
+    <Content Include="Resources\burn_folder-128.png" />
+    <Content Include="Resources\circuit-26.png" />
+    <Content Include="Resources\Configure alt 1.ico" />
+    <Content Include="Resources\database-128.png" />
+    <Content Include="Resources\database-32.png" />
+    <Content Include="Resources\database-64.png" />
+    <Content Include="Resources\data_configuration-128.png" />
+    <Content Include="Resources\delete-26.png" />
+    <Content Include="Resources\delete-32.png" />
+    <Content Include="Resources\delete-321.png" />
+    <Content Include="Resources\delete_database-32.png" />
+    <Content Include="Resources\delete_file-26.png" />
+    <Content Include="Resources\dK2B3.png" />
+    <Content Include="Resources\down-32.png" />
+    <Content Include="Resources\edit_user-128.png" />
+    <Content Include="Resources\electrical_threshold-128.png" />
+    <Content Include="Resources\electrical_threshold-64.png" />
+    <Content Include="Resources\engine-26.png" />
+    <Content Include="Resources\engineering-32.png" />
+    <Content Include="Resources\excel-26.png" />
+    <Content Include="Resources\excel-32.png" />
+    <Content Include="Resources\fondo.png" />
+    <Content Include="Resources\gmail_login-128.png" />
+    <Content Include="Resources\google_blog_search-128.png" />
+    <Content Include="Resources\google_blog_search-512.png" />
+    <Content Include="Resources\google_web_search-32.png" />
+    <Content Include="Resources\Gray-Bar.jpg" />
+    <Content Include="Resources\Green-Bar2.jpg" />
+    <Content Include="Resources\GreenBar.gif" />
+    <Content Include="Resources\ikor-en-1-638_2.jpg" />
+    <Content Include="Resources\images.jpg" />
+    <Content Include="Resources\image_file-26.png" />
+    <Content Include="Resources\img_sectores01.jpg" />
+    <Content Include="Resources\info-32.png" />
+    <Content Include="Resources\info-321.png" />
+    <Content Include="Resources\logo-ikor.gif" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\logo1.png" />
+    <Content Include="Resources\logo_ikor.png" />
+    <Content Include="Resources\Medium-gray.jpg" />
+    <Content Include="Resources\monitor-32.png" />
+    <Content Include="Resources\monitor-321.png" />
+    <Content Include="Resources\network_card-26.png" />
+    <Content Include="Resources\PCB-Fabrication.png" />
+    <Content Include="Resources\purpleBar1.png" />
+    <Content Include="Resources\purpleBar2.png" />
+    <Content Include="Resources\red_horizontal_bar-346x143.jpg" />
+    <Content Include="Resources\system_information-26.png" />
+    <Content Include="Resources\up-32.png" />
+    <Content Include="Resources\xml-26.png" />
+    <None Include="Resources\pcbs2.ico" />
+    <Content Include="Resources\printtrafos%282%29.ico" />
+    <Content Include="Resources\printtrafos%282%29.png" />
+    <Content Include="Resources\question_shield-32.png" />
+    <Content Include="Resources\question_shield-321.png" />
+    <Content Include="Resources\save_as-26.png" />
+    <Content Include="Resources\search-2-512.gif" />
+    <Content Include="Resources\search1.png" />
+    <Content Include="Resources\Shortcuts.ico" />
+    <Content Include="Resources\start-48.png" />
+    <Content Include="Resources\start-48_blk.png" />
+    <Content Include="Resources\start-48_wte.png" />
+    <Content Include="Resources\stop-481.png" />
+    <Content Include="Resources\timer-128.png" />
+    <Content Include="Resources\top_navigation_toolbar-26.png" />
+    <Content Include="Resources\View_Details-32.png" />
+    <Content Include="Resources\xls-128.png" />
+    <Content Include="Resources\xml-128.png" />
+    <Content Include="Resources\xml-1281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

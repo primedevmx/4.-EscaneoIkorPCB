@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EscaneoIkor.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="InstanciaServerSql" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=192.168.48.182\SQLEXPRESS;initial catalog=dbIkorPCB_Scan;user id=UserIkor;password=admin;Connection Timeout=180000</Value>
+    </Setting>
+    <Setting Name="LastUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">UserIkor</Value>
+    </Setting>
+    <Setting Name="cModoXml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">M</Value>
+    </Setting>
+    <Setting Name="strCuentaReceptora" Type="System.String" Scope="User">
+      <Value Profile="(Default)">balzarowsky@gmail.com</Value>
+    </Setting>
+    <Setting Name="strCuentaEmisora" Type="System.String" Scope="User">
+      <Value Profile="(Default)">daemonikor@gmail.com</Value>
+    </Setting>
+    <Setting Name="strRepoXMLs" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\</Value>
+    </Setting>
+    <Setting Name="strRepoDATs" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\</Value>
+    </Setting>
+    <Setting Name="strMiliTimerConnExcel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">60000</Value>
+    </Setting>
+    <Setting Name="cModoExcel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">M</Value>
+    </Setting>
+    <Setting Name="strRepoExcel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\</Value>
+    </Setting>
+    <Setting Name="strMiliTimerConnSQL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">60000</Value>
+    </Setting>
+    <Setting Name="strRespaldoSQL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\</Value>
+    </Setting>
+    <Setting Name="bAplicaResp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="strContrasenaEmisora" Type="System.String" Scope="User">
+      <Value Profile="(Default)">V0lc4d0r2015</Value>
+    </Setting>
+    <Setting Name="strMiliTimerConnXML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">60000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

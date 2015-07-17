@@ -223,6 +223,9 @@
   <data name="printtrafos(2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\printtrafos(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Add_Row-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add_Row-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dK2B3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dK2B3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -286,6 +289,9 @@
   <data name="burn_folder-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\burn_folder-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="down-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\down-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="delete_database-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete_database-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -337,7 +343,7 @@
   <data name="purpleBar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\purpleBar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="down-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\down-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Delete_Row-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete_Row-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

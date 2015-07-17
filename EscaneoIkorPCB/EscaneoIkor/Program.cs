@@ -15,7 +15,6 @@ namespace EscaneoIkor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Opcionadores.frmPrincipal());
             Application.Run(new frmLogin());
         }
     }

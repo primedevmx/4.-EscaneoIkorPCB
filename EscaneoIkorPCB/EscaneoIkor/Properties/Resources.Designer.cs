@@ -93,6 +93,16 @@ namespace EscaneoIkor.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Add_Row_32 {
+            get {
+                object obj = ResourceManager.GetObject("Add_Row-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bgbar {
             get {
                 object obj = ResourceManager.GetObject("bgbar", resourceCulture);
@@ -246,6 +256,16 @@ namespace EscaneoIkor.Properties {
         internal static System.Drawing.Bitmap delete_file_26 {
             get {
                 object obj = ResourceManager.GetObject("delete_file-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Delete_Row_32 {
+            get {
+                object obj = ResourceManager.GetObject("Delete_Row-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

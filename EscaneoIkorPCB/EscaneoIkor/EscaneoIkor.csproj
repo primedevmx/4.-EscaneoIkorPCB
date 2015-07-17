@@ -25,12 +25,12 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://creandoproyectosexitosos.com/ikormex/scaneoikor/</InstallUrl>
+    <InstallUrl>http://creandoproyectosexitosos.com/scaneoikor/</InstallUrl>
     <UpdateUrl>http://creandoproyectosexitosos.com/ikormex/scaneoikor/</UpdateUrl>
     <PublisherName>IKOR</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.htm</WebPage>
-    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationRevision>10</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -120,11 +120,23 @@
       <DependentUpon>frmMonitores.cs</DependentUpon>
     </Compile>
     <Compile Include="DataMatrix\cDataMatrix.cs" />
+    <Compile Include="DataMatrix\frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataMatrix\frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataMatrix\frmDataMatrix.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataMatrix\frmDataMatrix.Designer.cs">
       <DependentUpon>frmDataMatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataMatrix\frmMtoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataMatrix\frmMtoProducto.Designer.cs">
+      <DependentUpon>frmMtoProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Excel\frmProcesarExcel.cs">
       <SubType>Form</SubType>
@@ -232,8 +244,14 @@
     <EmbeddedResource Include="Configuracion\frmMonitores.resx">
       <DependentUpon>frmMonitores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataMatrix\frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataMatrix\frmDataMatrix.resx">
       <DependentUpon>frmDataMatrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataMatrix\frmMtoProducto.resx">
+      <DependentUpon>frmMtoProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Excel\frmProcesarExcel.resx">
       <DependentUpon>frmProcesarExcel.cs</DependentUpon>
@@ -311,6 +329,7 @@
     <Content Include="Resources\30y.PNG" />
     <Content Include="Resources\accept_database-32.png" />
     <Content Include="Resources\add_database-32.png" />
+    <Content Include="Resources\Add_Row-32.png" />
     <Content Include="Resources\approval-32 %281%29.png" />
     <Content Include="Resources\approval-32.png" />
     <Content Include="Resources\approval-321.png" />
@@ -332,6 +351,7 @@
     <Content Include="Resources\delete-321.png" />
     <Content Include="Resources\delete_database-32.png" />
     <Content Include="Resources\delete_file-26.png" />
+    <None Include="Resources\Delete_Row-32.png" />
     <Content Include="Resources\dK2B3.png" />
     <Content Include="Resources\down-32.png" />
     <Content Include="Resources\edit_user-128.png" />
